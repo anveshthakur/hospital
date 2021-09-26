@@ -1,0 +1,61 @@
+.navbar {
+  width: 100%;
+  max-width: 100%;
+  min-height: 6vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F4EEE8;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.navigation ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 6vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation ul li {
+  text-align: center;
+  padding: .5em;
+  cursor: pointer;
+  list-style-type: none;
+  padding-top: 20px;
+  color: #325288;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
