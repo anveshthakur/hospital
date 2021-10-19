@@ -67,3 +67,9 @@ body{
     position: relative;
     top: 20px;
 }
+
+.section4{
+    margin-top: -8.5vh;
+    background-color: #F4EEE8;
+    height: 30vh;
+}

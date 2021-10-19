@@ -16,6 +16,7 @@ contract Hospital{
         uint age;
         string symptoms; //cost cutting
         bool paid; //
+        bool status;
     }
     
     mapping(address => patient) public patients;
@@ -42,7 +43,7 @@ contract Hospital{
         else if(_gender == 2){
             patients[_patientAddress].gender = Gender.Female;
         }
-        else{
+        else if(_gender == 3){
             patients[_patientAddress].gender = Gender.Others;
         }
     }
@@ -59,12 +60,19 @@ contract Hospital{
         require(msg.sender == owner, "You're Not Authorized");
         _to.transfer(totalBalance());
     }
-    
+
     receive() external payable{
         require(msg.value == 1 ether, "Patient Registration Requires to be 1 ether exact");
         patientCount++; 
         patients[msg.sender].paid = true;
         patients[msg.sender].patientId = patientCount;
         patients[msg.sender].gender = defaultChoice;
+        patients[msg.sender].status = false;
     }
 }
+
+
+
+
+// abi
+// app.js -----> SmartContact ------> Blockchain

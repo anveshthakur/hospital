@@ -13,7 +13,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F4EEE8;
+  background-color: #eee;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -22,7 +22,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: inherit;
+  background-color: lightblue;
 }
 
 .logo img {
@@ -49,13 +49,15 @@
   text-align: center;
   padding: .5em;
   cursor: pointer;
-  list-style-type: none;
-  padding-top: 20px;
-  color: #325288;
-  font-weight: 500;
 }
 
-a {
+.navigation ul li:hover {
+  background-color: plum;
+  color: white;
+}
+
+.navigation ul li a {
   text-decoration: none;
   color: inherit;
 }
+/*# sourceMappingURL=navbar.css.map */
